@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;650;700&family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Naskh Arabic", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+  font-family: var(--font-sans);
+}
+
+/* Redesign Slate background panels to Pure White and Light Gray */
+.bg-slate-950, .bg-slate-900, .bg-slate-905, .bg-slate-910, .bg-slate-955 {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+}
+
+.bg-slate-800, .bg-slate-850, .bg-slate-855, .bg-slate-750 {
+  background-color: #F8F9FA !important;
+  color: #111827 !important;
+}
+
+.border-slate-800, .border-slate-850, .border-slate-705, .border-slate-900, .border-slate-855, .border-slate-600 {
+  border-color: #E5E7EB !important;
+}
+
+/* Ensure Text content is clearly visible, Dark Gray (#111827) */
+.text-slate-100, .text-slate-200, .text-slate-350, .text-white, .text-slate-105 {
+  color: #111827 !important;
+}
+
+.text-slate-400, .text-slate-450, .text-slate-500 {
+  color: #4B5563 !important;
+}
+
+/* Primary Color: Royal Blue (#2563EB) */
+.bg-amber-500, .bg-indigo-600, .bg-blue-600, .bg-blue-700, .bg-blue-550 {
+  background-color: #2563EB !important;
+  color: #FFFFFF !important;
+}
+
+.text-amber-500, .text-indigo-500, .text-blue-500, .text-orange-400 {
+  color: #2563EB !important;
+}
+
+/* Secondary Color: Emerald Green (#10B981) */
+.bg-emerald-600, .bg-emerald-500 {
+  background-color: #10B981 !important;
+  color: #FFFFFF !important;
+}
+
+.text-emerald-400, .text-emerald-550, .text-emerald-500 {
+  color: #10B981 !important;
+}
+
+/* Danger Color: Red (#EF4444) */
+.bg-rose-600, .bg-red-600, .bg-rose-500, .bg-rose-950 {
+  background-color: #EF4444 !important;
+  color: #FFFFFF !important;
+}
+
+.text-rose-450, .text-rose-500, .text-rose-600, .text-red-500, .text-red-600 {
+  color: #EF4444 !important;
+}
+
+/* Warning Color: Orange (#F59E0B) */
+.bg-amber-400, .bg-yellow-500 {
+  background-color: #F59E0B !important;
+  color: #FFFFFF !important;
+}
+
+.text-yellow-500 {
+  color: #F59E0B !important;
+}
+
+/* ── URDU & ARABIC RTL OPTIMIZATIONS ── */
+/* Forces correct cursive ligatures and overrides tracking-* classes which break Arabic/Urdu scripts */
+[dir="rtl"], [lang="ur"], .lang-ur {
+  letter-spacing: 0px !important;
+  font-family: "Noto Naskh Arabic", "Inter", sans-serif !important;
+}
+
+[dir="rtl"] * {
+  letter-spacing: 0px !important;
+}
+

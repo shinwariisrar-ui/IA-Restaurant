@@ -1,0 +1,6 @@
+{
+  "name": "Restaurant ERP and POS",
+  "description": "An offline-first Restaurant POS and ERP dashboard with simulated local network synchronization, live kitchen displays, automated stock recipe deduction, lockable cancel registers, and cloud reporting.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
